@@ -1,28 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+   <div class="container grid-xs py-2 text-center">
+      <img alt="Vue logo" src="@/assets/logo.png">
+      <form>
+        <div class="input-group">
+          <input type="text" class="form-input" placeholder="Nova tarefa">
+          <button class="btn btn-primary input-group-btn">Adicionar</button>
+        </div>
+      </form>
+   </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+img {
+  max-width: 150px;
+  margin: 0 auto;
 }
 </style>
